@@ -9,13 +9,9 @@ class CacheService:
         self.client = None
         self.ttl = Config.REDIS_TTL
         try:
-            self.client = redis.Redis(
-                host=Config.REDIS_HOST,
-                port=Config.REDIS_PORT,
-                password=Config.REDIS_PASSWORD,
-                db=Config.REDIS_DB,
+            self.client = redis.Redis.from_url(
+                Config.REDIS_URL,
                 decode_responses=True,
-                ssl=False,
                 socket_connect_timeout=2,
                 socket_timeout=2
             )

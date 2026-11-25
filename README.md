@@ -233,10 +233,7 @@ Create a `.env` file inside `pdf_rag/`:
 
 ```env
 OPENROUTER_API_KEY=your_openrouter_api_key_here
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_PASSWORD=
-REDIS_DB=0
+REDIS_URL=redis://localhost:6379/0
 REDIS_TTL=3600
 JWT_SECRET=your-secret-key-here
 API_BASE_URL=http://127.0.0.1:8000

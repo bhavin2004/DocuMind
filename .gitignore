@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+faiss_index/
+venv/
+.vscode/
+uploads/
+*.pdf
+users.json
+chat_history.json

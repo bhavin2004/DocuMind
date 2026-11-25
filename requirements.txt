@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+PyPDF2
+langchain
+langchain-openai
+langchain-community
+faiss-cpu
+pydantic
+openai
+python-multipart
+redis
+PyJWT
+sentence-transformers
+numpy
+streamlit

@@ -1,0 +1,14 @@
+.git
+.env
+.venv
+venv
+__pycache__
+*.py[cod]
+.vscode
+uploads
+faiss_index
+users.json
+chat_history.json
+*.pdf
+*.mp4
+screenshots

@@ -241,6 +241,15 @@ API_BASE_URL=http://127.0.0.1:8000
 
 ### Running Locally
 
+For Railway, deploy the repository using the Dockerfile and remove any custom
+start command. Set `OPENROUTER_API_KEY`, `REDIS_URL`, `REDIS_TTL`, and
+`JWT_SECRET` as service variables. The container starts FastAPI on port 8000
+and Streamlit on Railway's `PORT` (8501 locally). Configure separate public
+domains targeting port 8000 for the API and the Streamlit port for the UI.
+Set `PORT=8501` if using a fixed Streamlit target port; do not set it to 8000.
+Local application files are not persistent
+across deployments unless a persistent storage solution is configured.
+
 ```bash
 # Terminal 1 — FastAPI backend
 uvicorn main:app --reload --port 8000
